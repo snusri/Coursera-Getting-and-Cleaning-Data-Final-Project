@@ -1,0 +1,27 @@
+This is the course project for the Getting and Cleaning Data Coursera course. The R script, run_analysis.R, does the following:
+
+1. Downloads the dataset from the link provided
+2. Loads the activity and feature info
+3. Loads both the training and test datasets
+4. Loads the activity and subject data for each dataset, and merges those columns with the dataset
+5. Names the activity_label names with appropriate activities in the dataset
+6. Merges the two test and train dataset
+7. Filters the columns which reflect a mean or standard deviation
+8. Converts the Activity, ActivityLabel and SubjectIdentifier columns into factors
+9. Appropriately labels the dataset with descriptive variable names
+10. Creates an independent tidy dataset with the average of each variable for each activity and each subject
+11. The end result is shown in the file tidy.txt
+12. Creates a codebook for tidy.txt
+
+
+Additional notes:
+
+SubjectIdentifier - The ID of the subject
+Activity - The type of activity performed when the corresponding measurements were taken
+
+WALKING: subject was walking during the test
+WALKING_UPSTAIRS: subject was walking up a staircase during the test
+WALKING_DOWNSTAIRS: subject was walking down a staircase during the test
+SITTING: subject was sitting during the test
+STANDING: subject was standing during the test
+LAYING: subject was laying down during the test
